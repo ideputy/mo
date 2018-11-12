@@ -24,6 +24,11 @@
     messagingSenderId: "420814448518"
   };
   firebase.initializeApp(config);
+	firebase.auth().onAuthStateChanged(user => {
+     		 if(!user) {
+        window.location = 'http://xn--80ahd4bpbe6g.xn--p1ai/'; //After successful login, user will be redirected to home.html
+      }
+  });
 </script>
 <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
