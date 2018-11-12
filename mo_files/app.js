@@ -25,9 +25,10 @@ function getUiConfig() {
           type: 'image',
           size: 'invisible',
           badge: 'bottomleft'
-        }
+        },
+        defaultCountry: 'RU'
       }
-    ],
+     ],
     // Terms of service url.
     'tosUrl': 'https://www.google.com'
   };
