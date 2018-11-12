@@ -17,7 +17,7 @@ function getUiConfig() {
     'signInFlow': 'popup',
     'signInOptions': [
       // The Provider you need for your app. We need the Phone Auth
-      firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+  //    firebase.auth.TwitterAuthProvider.PROVIDER_ID,
       {
         provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
         recaptchaParameters: {
@@ -25,7 +25,8 @@ function getUiConfig() {
           type: 'image',
           size: 'invisible',
           badge: 'bottomleft'
-        }
+        },
+        defaultCountry: 'RU'
       }
     ],
     // Terms of service url.
